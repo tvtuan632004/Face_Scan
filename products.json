@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "RTFRS LITE",
+        "description": "Tối ưu hạ tầng cũ. Phần mềm nhận diện chuyên dụng tích hợp vào hệ thống camera sẵn có.",
+        "image": "/rtfrs_lite.jpg",
+        "features": [
+            "Công nghệ AI độc lập, không phụ thuộc phần cứng",
+            "Tốc độ nhận diện <0.2s",
+            "Lưu trữ dữ liệu nội bộ (On-premise) an toàn"
+        ],
+        "detail": "<h3>Gói RTFRS Lite: \"Tận dụng hạ tầng - Tối ưu chi phí\"</h3><br><p>Giải pháp hoàn hảo cho các doanh nghiệp vừa và nhỏ (SME) muốn bắt đầu hành trình chuyển đổi số với mức đầu tư thấp nhất.</p><br><strong>Đối tượng phù hợp:</strong> Văn phòng nhỏ, cửa hàng bán lẻ, hoặc trường học đã trang bị sẵn hệ thống camera IP.<br><br><strong>Sản phẩm bao gồm:</strong><br>- Bản quyền phần mềm RTFRS (Linh hoạt lựa chọn bản vĩnh viễn hoặc thuê bao hàng tháng).<br>- Hỗ trợ cài đặt và cấu hình hệ thống từ xa qua Remote Desktop.<br>- Khả năng tích hợp trực tiếp vào hệ thống camera sẵn có qua giao thức RTSP/ONVIF.<br><br><strong>Chi phí đầu tư:</strong> Chỉ từ 2.000.000 - 4.000.000 VND (Phí bản quyền phần mềm).<br><br><strong>Lợi điểm bán hàng:</strong> \"Biến hệ thống camera cũ thành giải pháp AI thông minh chỉ trong 1 giờ mà không cần mua mới thiết bị\"."
+    },
+    {
+        "id": 2,
+        "name": "RTFRS STANDARD",
+        "description": "Trọn gói ổn định. Giải pháp: Combo Phần mềm + Camera IP độ phân giải cao.",
+        "image": "/rtfrs_standard.jpg",
+        "features": [
+            "Tích hợp đo thân nhiệt chính xác (Tùy chọn)",
+            "Màn hình quản trị trực quan",
+            "Kết nối đa dạng qua Wifi/LAN"
+        ],
+        "detail": "<h3>Gói RTFRS Standard: \"Giải pháp trọn gói - Vận hành ổn định\"</h3><br><p>Hệ thống hoàn chỉnh cho các đơn vị cần sự đồng bộ cao, lắp đặt tận nơi và dịch vụ hậu mãi chu đáo.</p><br><strong>Đối tượng phù hợp:</strong> Các công ty quy mô 50 - 200 nhân viên, trường học, ký túc xá yêu cầu hệ thống vận hành bền bỉ 24/7.<br><br><strong>Sản phẩm bao gồm:</strong><br>- Phần mềm RTFRS được tối ưu hóa theo yêu cầu.<br>- Bộ 1 - 3 Camera IP độ phân giải cao (2MP - 1080p).<br>- Thiết bị xử lý trung tâm (Mini Server hoặc PC có GPU rời) để đảm bảo tốc độ nhận diện dưới 100ms.<br>- Dịch vụ lắp đặt tận nơi và hướng dẫn vận hành chi tiết cho nhân viên.<br><br><strong>Chi phí đầu tư:</strong> 8.000.000 - 15.000.000 VND (Tùy thuộc vào số lượng camera và cấu hình máy chủ).<br><br><strong>Lợi điểm bán hàng:</strong> \"Hệ thống điểm danh AI tự động, nhận diện đa mục tiêu cùng lúc, thay thế hoàn toàn các phương pháp chấm công vân tay lỗi thời\"."
+    },
+    {
+        "id": 3,
+        "name": "RTFRS PREMIUM",
+        "description": "An ninh & Tích hợp sâu. Hệ thống cao cấp tích hợp sâu vào quản trị doanh nghiệp.",
+        "image": "/rtfrs_premium.jpg",
+        "features": [
+            "Nhận diện góc rộng và khoảng cách xa lên đến 2-5 mét",
+            "Đồng bộ dữ liệu đám mây đa chi nhánh",
+            "Hỗ trợ API kết nối HRM/ERP linh hoạt"
+        ],
+        "detail": "<h3>Gói RTFRS Premium: \"An ninh thông minh & Tích hợp chuyên sâu\"</h3><br><p>Giải pháp an ninh cao cấp kết hợp phân tích hành vi, dành cho các tổ chức coi trọng quản trị an toàn và dữ liệu hệ thống.</p><br><strong>Đối tượng phù hợp:</strong> Nhà máy, khu công nghiệp, doanh nghiệp lớn cần quản trị an ninh nghiêm ngặt và đồng bộ hóa dữ liệu tập trung.<br><br><strong>Sản phẩm bao gồm:</strong><br>- Phần mềm RTFRS phiên bản đầy đủ (Full Features) với khả năng tùy biến cao.<br>- Hệ thống Camera AI chuyên dụng, hỗ trợ nhận diện tầm xa (2-5m) và hoạt động tốt trong điều kiện ánh sáng cực yếu.<br>- <strong>Tính năng độc quyền:</strong><br>&nbsp;&nbsp;+ Cảnh báo người lạ (Stranger Alert): Phát hiện và báo động tức thì khi có xâm nhập trái phép.<br>&nbsp;&nbsp;+ Phát hiện hành vi nguy hiểm: Cảnh báo không đội mũ bảo hiểm hoặc vi phạm quy định an toàn lao động.<br>&nbsp;&nbsp;+ Đếm người (People Counting): Quản lý mật độ người trong khu vực theo thời gian thực.<br>- <strong>Khả năng tích hợp:</strong> Kết nối sâu qua API với hệ thống quản trị nhân sự (HRM), ERP hoặc các nền tảng quản lý hiện có của doanh nghiệp.<br>- <strong>Dịch vụ đẳng cấp:</strong> Hỗ trợ kỹ thuật 24/7 và gói bảo trì định kỳ ưu tiên.<br><br><strong>Chi phí đầu tư:</strong> Từ 30.000.000 VND+ (Tùy biến theo quy mô dự án).<br><br><strong>Lợi điểm bán hàng:</strong> \"Nền tảng quản trị an ninh toàn diện, không chỉ là điểm danh mà còn là công cụ bảo vệ an toàn lao động và tối ưu hóa nguồn lực doanh nghiệp\"."
+    }
+]

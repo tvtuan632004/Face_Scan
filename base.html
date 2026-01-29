@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RT-FRIS | Intelligent Security Solutions</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                RT-FRIS
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Trang chủ</a></li>
+                    <li><a href="#features" class="nav-link">Tính năng</a></li>
+                    <li><a href="#products" class="nav-link">Sản phẩm</a></li>
+                    <li><a href="#contact" class="nav-link btn-contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Real-time Face Recognition System</h3>
+                <p>Hệ thống bởi RTFRS.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Giải pháp</h4>
+                <ul>
+                    <li><a href="#">Nhận diện khuôn mặt</a></li>
+                    <li><a href="#">Tự động điểm danh</a></li>
+                    <li><a href="#">Cảm biến nhiệt</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Liên hệ</h4>
+                <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fa-solid fa-envelope"></i> sales@smartcam.ai</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Real-time Face Recognition System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

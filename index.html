@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1 class="fade-in">Giải pháp nhận diện khuôn mặt thông minh bằng <span class="neon-text">Camera</span></h1>
+            <p class="fade-in delay-1">Công nghệ nhận diện khuôn mặt tiên tiến nhất thế hệ mới. Chính xác, nhanh chóng
+                và bảo mật tuyệt đối cho
+                doanh nghiệp và trường học. Giúp giảm chi phí nhân công và nhanh chóng hơn.</p>
+            <div class="hero-buttons fade-in delay-2">
+                <a href="#products" class="btn btn-primary">Xem sản phẩm</a>
+                <button onclick="toggleDemo()" class="btn btn-outline">Xem Demo</button>
+            </div>
+        </div>
+        <div class="hero-image fade-in delay-1">
+            <video autoplay muted loop playsinline poster="{{ url_for('static', filename='rtfrs_device.png') }}"
+                style="width: 100%; height: auto; display: block;">
+                <source src="{{ url_for('static', filename='hero_video.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay-glow"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Demo Video Section -->
+<section id="demo" class="demo-section section-padding" style="text-align: center; display: none;">
+    <div class="container">
+        <h2 class="section-title">Xem Demo</h2>
+        <div class="video-container"
+            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border: 2px solid var(--primary); border-radius: 10px; box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);">
+            <iframe src="https://drive.google.com/file/d/1pezpYijJmh1CFUo3JOLZZ_k0puqlE1XB/preview"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0"
+                allow="autoplay"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features section-padding">
+    <div class="container">
+        <h2 class="section-title">Tại sao chọn RTFRS ?</h2>
+        <div class="features-grid">
+            <div class="feature-card" onclick="openModal(this)" data-title="Nhận diện khuôn mặt chuẩn xác"
+                data-image="{{ url_for('static', filename='feature_1.jpg') }}"
+                data-detail="<h3>RTFRS phá vỡ rào cản về độ chính xác của các hệ thống camera truyền thống nhờ sức mạnh từ trí tuệ nhân tạo .</h3><br><strong>Mô tả:</strong> Hệ thống đạt độ chính xác thực tế trên 99% nhờ sự kết hợp hoàn hảo giữa mô hình YOLOv8 để phát hiện vật thể và ArcFace để trích xuất đặc trưng khuôn mặt.<br><br><strong>Khả năng thích ứng cao:</strong> Thuật toán được tối ưu để hoạt động ổn định trong các môi trường khắc nghiệt như thiếu sáng, ngược sáng hoặc khi người dùng di chuyển ở tốc độ cao.<br><br><strong>Nhận diện khi đeo khẩu trang:</strong> Hệ thống có khả năng nhận diện dựa trên các đặc điểm vùng mắt và trán, đảm bảo an toàn và tiện lợi trong mọi điều kiện.<br><br><strong>Cơ chế bỏ phiếu :</strong> Để loại bỏ sai sót, RTFRS tổng hợp kết quả từ nhiều khung hình liên tiếp trước khi đưa ra danh tính xác thực nhất.">
+                <div class="icon-box"><i class="fa-solid fa-user-check"></i></div>
+                <h3>Nhận diện khuôn mặt chuẩn xác</h3>
+                <p>RTFRS phá vỡ rào cản về độ chính xác của các hệ thống camera truyền thống nhờ sức mạnh từ trí tuệ
+                    nhân tạo .</p>
+            </div>
+            <div class="feature-card" onclick="openModal(this)" data-title="Tự động hóa điểm danh (Smart Attendance)"
+                data-image="{{ url_for('static', filename='feature_2.jpg') }}"
+                data-detail="<h3>Giải pháp điểm danh không tiếp xúc giúp doanh nghiệp tiết kiệm hàng chục giờ quản lý mỗi tháng và loại bỏ hoàn toàn gian lận.</h3><br><strong>Nhận diện đa mục tiêu (Multi-face):</strong> Khác với máy chấm công vân tay chỉ xử lý từng người, RTFRS có thể nhận diện đồng thời từ 5 đến 15 người trong cùng một khung hình.<br><br><strong>Tốc độ xử lý tức thì:</strong> Thời gian nhận diện chỉ dưới 100ms/khung hình, giúp luồng người di chuyển liên tục mà không cần dừng lại trước camera.<br><br><strong>Tự động hóa báo cáo:</strong> Hệ thống tự động ghi nhận thời gian (timestamp) và xuất báo cáo Excel/PDF định kỳ, giúp giảm 90% khối lượng công việc thủ công của bộ phận HR.<br><br><strong>Tích hợp hệ thống quản lý:</strong> Cung cấp API linh hoạt để đồng bộ dữ liệu trực tiếp với các phần mềm quản trị doanh nghiệp sẵn có như HRM, ERP hoặc phần mềm quản lý học sinh.">
+                <div class="icon-box"><i class="fa-solid fa-clock"></i></div>
+                <h3>Tự động hóa điểm danh</h3>
+                <p>Giải pháp điểm danh không tiếp xúc giúp doanh nghiệp tiết kiệm hàng chục giờ quản lý mỗi tháng.</p>
+            </div>
+            <!-- Other cards remain unchanged for now -->
+            <div class="feature-card" onclick="openModal(this)" data-title="Cảnh báo thông minh & An ninh 24/7"
+                data-image="{{ url_for('static', filename='feature_3.jpg') }}"
+                data-detail="<h3>RTFRS biến hệ thống camera thụ động thành một người bảo vệ thông minh, luôn cảnh giác trước mọi rủi ro.</h3><br><strong>Nhận diện người lạ (Stranger Alert):</strong> Hệ thống lập tức phát hiện và gửi thông báo khi có khuôn mặt không nằm trong cơ sở dữ liệu xuất hiện tại các khu vực nhạy cảm.<br><br><strong>Giám sát mật độ:</strong> Theo dõi số lượng người trong một khu vực nhất định theo thời gian thực để hỗ trợ quản lý an toàn và tối ưu hóa không gian.<br><br><strong>Cảnh báo an toàn lao động:</strong> Mở rộng tính năng phát hiện các hành vi vi phạm như không đeo mũ bảo hiểm hoặc đi vào khu vực cấm trong nhà máy.<br><br><strong>Thông báo đa kênh:</strong> Gửi cảnh báo ngay lập tức qua giao diện phần mềm, email hoặc tin nhắn đến người quản lý khi có sự cố xảy ra.">
+                <div class="icon-box"><i class="fa-solid fa-bell"></i></div>
+                <h3>Cảnh báo thông minh</h3>
+                <p>RTFRS biến hệ thống camera thụ động thành một người bảo vệ thông minh, luôn cảnh giác trước mọi rủi
+                    ro.</p>
+            </div>
+            <div class="feature-card" onclick="openModal(this)" data-title="Đồng bộ đám mây & Quản trị linh hoạt"
+                data-image="{{ url_for('static', filename='feature_4.jpg') }}"
+                data-detail="<h3>Quản lý tập trung toàn bộ hệ thống từ bất kỳ đâu, trên bất kỳ thiết bị nào.</h3><br><strong>Quản trị đa nền tảng:</strong> Giao diện trực quan được xây dựng trên nền tảng web và ứng dụng, cho phép truy cập từ PC, Laptop cho đến điện thoại di động.<br><br><strong>Quản lý cơ sở dữ liệu dễ dàng:</strong> Thêm người dùng mới chỉ bằng một tấm ảnh chụp từ điện thoại mà không cần phải huấn luyện lại toàn bộ mô hình AI.<br><br><strong>Lưu trữ bảo mật (On-premise & Cloud):</strong> Linh hoạt lựa chọn lưu trữ dữ liệu tại máy chủ nội bộ để đảm bảo an toàn tuyệt đối hoặc đưa lên Cloud để quản lý tập trung nhiều chi nhánh.<br><br><strong>Theo dõi trạng thái thời gian thực:</strong> Dashboard thống kê trực quan số lượng người có mặt, lịch sử nhận diện và tình trạng hoạt động của các mắt camera trong hệ thống.">
+                <div class="icon-box"><i class="fa-solid fa-cloud"></i></div>
+                <h3>Đồng bộ đám mây</h3>
+                <p>Quản lý tập trung toàn bộ hệ thống từ bất kỳ đâu, trên bất kỳ thiết bị nào.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Detail Modal -->
+    <div id="featureModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-left" id="modalLeft">
+                    <!-- Image will be injected here if available -->
+                </div>
+                <div class="modal-right">
+                    <h2 id="modalTitle">Feature Title</h2>
+                    <div id="modalDescription">Feature details go here...</div>
+                    <div style="margin-top: 30px; text-align: right;">
+                        <button onclick="closeModal()"
+                            style="padding: 10px 20px; background-color: #eee; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; color: #333;">&larr;
+                            Quay lại</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="products section-padding">
+    <div class="container">
+        <h2 class="section-title">Sản phẩm của chúng tôi</h2>
+
+        <!-- Search Bar -->
+        <div class="search-container" style="text-align: center; margin-bottom: 40px;">
+            <div class="search-box" style="position: relative; display: inline-block; width: 100%; max-width: 500px;">
+                <input type="text" id="productSearch" onkeyup="filterProducts()" placeholder="Tìm kiếm sản phẩm..."
+                    style="width: 100%; padding: 15px 50px 15px 25px; border-radius: 30px; border: 2px solid #233554; background: #0a0e17; color: #fff; font-size: 1rem; transition: all 0.3s ease;">
+                <i class="fa-solid fa-search"
+                    style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: var(--primary);"></i>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            {% for product in products %}
+
+            <div class="product-card" onclick="openModal(this)" data-title="{{ product.name }}"
+                data-image="{{ product.image }}" data-detail="{{ product.detail }}">
+                <div class="product-img">
+                    <img src="{{ product.image }}" alt="{{ product.name }}">
+                </div>
+                <div class="product-info">
+                    <h3>{{ product.name }}</h3>
+                    <p>{{ product.description }}</p>
+                    <ul class="product-features">
+                        {% for feature in product.features %}
+                        <li><i class="fa-solid fa-check"></i> {{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                    <a href="#contact" class="btn btn-small">Nhận báo giá</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact section-padding">
+    <div class="container contact-wrapper">
+        <div class="contact-info">
+            <h2>Liên hệ ngay</h2>
+            <p>Sẵn sàng nâng cấp hệ thống an ninh? Điền vào biểu mẫu và đội ngũ của chúng tôi sẽ liên hệ lại trong vòng
+                24 giờ.</p>
+            <ul class="info-list">
+                <li><i class="fa-solid fa-location-dot"></i> Hoa Lac Park, Ha Noi, Viet Nam</li>
+                <li><i class="fa-solid fa-envelope"></i> support@smartcam.ai</li>
+                <li><i class="fa-solid fa-phone"></i> 024123123123</li>
+            </ul>
+        </div>
+        <div class="contact-form-box">
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label>Họ tên</label>
+                    <input type="text" name="name" required placeholder="Nguyễn Văn A">
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại</label>
+                    <input type="tel" name="phone" required placeholder="+84 34 567 890">
+                </div>
+                <div class="form-group">
+                    <label>Tin nhắn / Yêu cầu</label>
+                    <textarea name="message" rows="4" placeholder="Tôi quan tâm đến Camera Face ID..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Gửi yêu cầu</button>
+            </form>
+            <div id="form-feedback"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // ... existing scripts ...
+
+    async function submitForm(event) {
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+        const feedback = document.getElementById('form-feedback');
+
+        try {
+            const response = await fetch('/contact', {
+                method: 'POST',
+                body: formData
+            });
+            const result = await response.json();
+            if (result.success) {
+                feedback.innerHTML = `<p class="success-msg"><i class="fa-solid fa-circle-check"></i> ${result.message}</p>`;
+                form.reset();
+            }
+        } catch (error) {
+            feedback.innerHTML = `<p class="error-msg">Có lỗi xảy ra. Vui lòng thử lại.</p>`;
+        }
+    }
+
+    function toggleDemo() {
+        const demoSection = document.getElementById('demo');
+        if (demoSection.style.display === 'none') {
+            demoSection.style.display = 'block';
+            demoSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            demoSection.style.display = 'none';
+        }
+    }
+
+    function filterProducts() {
+        const input = document.getElementById('productSearch');
+        const filter = input.value.toUpperCase();
+        const grid = document.getElementById('productsGrid');
+        const cards = grid.getElementsByClassName('product-card');
+
+        for (let i = 0; i < cards.length; i++) {
+            const title = cards[i].getElementsByTagName("h3")[0];
+            const txtValue = title.textContent || title.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+
+    // Modal Logic
+    const modal = document.getElementById("featureModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDesc = document.getElementById("modalDescription");
+    const modalLeft = document.getElementById("modalLeft");
+
+    function openModal(card) {
+        const title = card.getAttribute("data-title");
+        const detail = card.getAttribute("data-detail");
+        const imageSrc = card.getAttribute("data-image");
+
+        modalTitle.textContent = title;
+        modalDesc.innerHTML = detail;
+
+        // Handle Image
+        if (imageSrc) {
+            modalLeft.style.display = 'block';
+            modalLeft.innerHTML = `<img src="${imageSrc}" alt="${title}">`;
+            // Add a class to modal-content to indicate full width layout
+            document.querySelector('.modal-content').classList.add('has-image');
+        } else {
+            modalLeft.style.display = 'none';
+            modalLeft.innerHTML = '';
+            document.querySelector('.modal-content').classList.remove('has-image');
+        }
+
+        modal.style.display = "flex";
+        // Trigger reflow needed for animation
+        void modal.offsetWidth;
+        modal.classList.add("show");
+    }
+
+    function closeModal() {
+        modal.classList.remove("show");
+        setTimeout(() => {
+            modal.style.display = "none";
+        }, 300); // Match transition duration
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+</script>
+
+{% endblock %}
